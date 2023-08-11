@@ -7,9 +7,8 @@
 */
 int main(void)
 {
-const char *abel = "and that piece of art is useful\" - Dora Korpar, 11
-2015 - 10 - 19\n";
-size_t len = strlen(abel);
-write(STDOUT_FILENO, abel, len);
+const char *a = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+size_t len = strlen(a);
+write(STDOUT_FILENO, a, len);
 return (1);
 }
