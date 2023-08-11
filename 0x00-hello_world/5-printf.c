@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main entry level
+* main -entry level
 *
 * Return: Always 0 (Suces)
 */
