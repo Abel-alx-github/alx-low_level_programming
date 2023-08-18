@@ -13,10 +13,10 @@ printf("Infinite loop incoming :(\n");
 
 i = 0;
 
-/** while (i < 10)makes infinit, i++ should be added to update */
+/** while (i < 10)makes infinit, i++ should be added to update 
 {
 putchar(i);
-}
+}*/
 
 printf("Infinite loop avoided! \\o/\n");
 
