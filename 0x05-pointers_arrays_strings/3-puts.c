@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
 *_puts - print a string
 *@str: the string to print
@@ -7,14 +6,9 @@
 */
 void _puts(char *str)
 {
-while (*str != '\0')
+for (; *str != '\0'; *str++)
 	{
-	if (_putchar(*str) == EOF)
-		{
-		return (EOF);
-		}
+	_putchar(*str);
 	}
-return (_putchar('\n'));
-
-
+	_putchar('\n');
 }
