@@ -1,5 +1,10 @@
 #include "main.h"
 #include <stdio.h>
+/**
+*print_times_table - prints n times table
+*@n: int the user insert to print n tables
+*
+*/
 void print_times_table(int n)
 {
 int i, j;
