@@ -10,31 +10,24 @@ for (i = 0; i <= 9; i++)
 	{
 	for (j = 0; j <= 9; j++)
 		{
-		if (j * i < 10)
+	if (j * i < 10)
+		{
+		if (j == 0)
 			{
-			if (j != 9)
-				{
-				printf(" %d, ", i * j);
-				}
-			else
-				{
-				printf(" %d", i * j);
-				}
+			printf("%d", i * j);
 			}
-		else if (i * j >= 10)
+		else if (j <= 9 && j != 0)
 			{
-			if (j != 9)
-				{
-				printf("%d, ", i * j);
-				}
-			else
-				{
-				printf("%d", i * j);
-				}
+			printf(",  %d", i * j);
 			}
 		}
+		if (i * j >= 10)
+			{
+			printf(", %d%d", (i * j) / 10, (i * j) % 10);
+			}
+
+		}
+
 	printf("\n");
 	}
-
-
 }
