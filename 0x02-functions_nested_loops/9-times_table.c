@@ -14,11 +14,11 @@ for (i = 0; i <= 9; i++)
 			{
 			if (j != 9)
 				{
-				printf("%d,  ", i * j);
+				printf(" %d, ", i * j);
 				}
 			else
 				{
-				printf("%d", i * j);
+				printf(" %d", i * j);
 				}
 			}
 		else if (i * j >= 10)
