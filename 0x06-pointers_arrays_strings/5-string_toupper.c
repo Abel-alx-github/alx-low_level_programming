@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*string_toupper: function that convert lower case to upper
+**string_toupper - function that convert lower case to upper
 *@ch: input string
 *Return: returns converted char ch
 *
