@@ -14,8 +14,10 @@ int a, b;
 for (a = 0; ch[a] != '\0'; a++)
 	{
 	for (b = 0; b < 10; b++)
+		{
 		if (ch[a] == str1[b])
-			ch[a] = str2[b];
+		ch[a] = str2[b];
+		}
 	}
 return (ch);
 
