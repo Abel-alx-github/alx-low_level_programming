@@ -10,8 +10,8 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *new;
-	int i, j;
-	int len = 0;
+	unsigned int i, j;
+	unsigned int len = 0;
 
 	for ( ; s1[len] != '\0'; len++)
 		{}
@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		new[i] = s1[i];
 
 	for (j = 0; j < n; j++, i++)
-		new[i] = s2[i];
+		new[i] = s2[j];
 
 	return (new);
 
