@@ -12,11 +12,9 @@ char *_strchr(char *s, char c)
 	for (i = 0; *s != '\0'; s++, i++)
 	{
 		if (*s == c)
-			break;
+			return (s);
 	}
 
-	if (*s == '\0')
-		s = NULL;
 
-	return (s);
+	return (NULL);
 }
