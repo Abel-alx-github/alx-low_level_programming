@@ -10,10 +10,10 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 1; *s != '\0'; s++, i++)
 	{
-		if (s[i] == *accept)
-			return (i + 1);
+		if (*s == *accept)
+			return (i);
 	}
 
 	return (0);
