@@ -10,10 +10,13 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i;
 
-	for (i = 1; *s != '\0'; s++, i++)
+	if (*s != '\0')
 	{
-		if (*s == *accept && *accept != '\0')
-			return (i);
+		for (i = 1; *s != '\0'; s++, i++)
+		{
+			if (*s == *accept && *accept != '\0')
+				return (i);
+		}
 	}
 
 	return (0);
