@@ -90,12 +90,12 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 
-		re = read(from, buffer, 1024);
+		re = read(from, buf, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
 
 	} while (re > 0);
 
-	free(buffer);
+	free(buf);
 	close_file(from);
 	close_file(to);
 
