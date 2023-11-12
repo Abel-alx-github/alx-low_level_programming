@@ -8,18 +8,16 @@
 */
 size_t print_listint_safe(const listint_t *head)
 {
-	listint_t *temp;
 	int node = 0;
 
 	if (head == NULL)
 		exit(98);
 
-	temp = head;
-	while (temp)
+	while (head)
 	{
 		node++;
-		printf("%d\n", temp->n);
-		temp = temp->next;
+		printf("%d\n", head->n);
+		head = head->next;
 	}
 	return (node);
 }
