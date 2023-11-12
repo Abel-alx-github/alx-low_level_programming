@@ -3,7 +3,7 @@
 *add_nodeint_end - add node at end of list.
 *@head: pointer of pointer to head
 *@n: int data
-*Return newly added node address
+*Return: newly added node address
 */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
@@ -19,7 +19,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	else if (head)
 	{
 		temp = *head;
-		while (temp)
+		while (temp->next)
 			temp = temp->next;
 		temp->next = new;
 	}
