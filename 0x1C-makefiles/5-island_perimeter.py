@@ -18,7 +18,7 @@ def island_perimeter(grid):
     perimeter = 0
     boarder = 0
     box = 0
-    
+
     for row_idx, row in enumerate(grid):
         for elm_idx, elm in enumerate(row):
             if elm == 1:
