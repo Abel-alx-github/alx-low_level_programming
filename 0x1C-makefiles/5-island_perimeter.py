@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-""" return the primeter of an island area"""
+"""module contains function defination"""
 
 
 def island_perimeter(grid):
+    """ return the primeter of an island area"""
     p = 0
     for row_idx, row in enumerate(grid):
         for elm_idx, elm in enumerate(row):
