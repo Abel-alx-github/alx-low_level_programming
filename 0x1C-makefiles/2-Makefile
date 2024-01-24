@@ -9,6 +9,7 @@ NAME = school
 all: $(NAME)
 
 school: $(SRC)
-	$(CC) -c $(SRC)
+	$(CC) -c main.c
+	$(CC) -c school.c
 	$(CC) $(OBJ) -o $(NAME)
 	chmod +x $(NAME)
