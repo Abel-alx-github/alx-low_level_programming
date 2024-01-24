@@ -12,6 +12,8 @@ def island_perimeter(grid):
     Returns:
         The perimeter of the island defined in grid.
     """
+    if not grid or not grid[0]:
+        return 0
 
     perimeter = 0
     for row_idx, row in enumerate(grid):
