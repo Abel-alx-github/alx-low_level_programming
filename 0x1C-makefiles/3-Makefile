@@ -1,0 +1,22 @@
+# build a program
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+	chmod +x $(NAME)
+
+oclean: 
+	$(RM) $(OBJ)
+
+fclean: 
+	$(RM) $(OBJ) $(NAME) *~
+
+clean: 
+	$(RM) $(NAME) *~
+
+re: fclean all
