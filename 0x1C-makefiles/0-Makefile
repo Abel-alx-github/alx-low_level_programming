@@ -1,0 +1,8 @@
+# create excutable 'school'
+main = main.c school.c
+all: school
+
+school: $(main)
+	gcc $(main) -o school
+	chmod +x school
+
