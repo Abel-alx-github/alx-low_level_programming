@@ -2,14 +2,10 @@
 
 CC = gcc
 SRC = main.c school.c
-OBJ = main.o school.o
+OBJ = $(SRC:.c=.o)
 
 NAME = school
 
-all: $(NAME)
-
-school: $(SRC)
-	$(CC) -c main.c
-	$(CC) -c school.c
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 	chmod +x $(NAME)
