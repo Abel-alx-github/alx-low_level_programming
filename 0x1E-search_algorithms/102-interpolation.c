@@ -8,9 +8,10 @@
 */
 int interpolation_search(int *array, size_t size, int value)
 {
-	int low, high;
-	size_t pos;
+	size_t low, high, pos;
 
+	if (array == NULL)
+		return (-1);
 	low = 0;
 	high = size - 1;
 
