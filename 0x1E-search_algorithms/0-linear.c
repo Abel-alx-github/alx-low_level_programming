@@ -6,6 +6,8 @@
 *@value: int to search for
 *Return: indx at which the value is found or -1
 */
+
+
 int linear_search(int *array, size_t size, int value)
 {
 	size_t i;
@@ -17,7 +19,7 @@ int linear_search(int *array, size_t size, int value)
 	{
 		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 		if (array[i] == value)
-			return ((int)i);
+			return (i);
 	}
 	return (-1);
 }
