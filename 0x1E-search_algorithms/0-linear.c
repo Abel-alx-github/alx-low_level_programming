@@ -1,5 +1,6 @@
 #include "search_algos.h"
 #include <stdio.h>
+
 /**
 *linear_search - function find the  index of query value
 *@array: array of int
