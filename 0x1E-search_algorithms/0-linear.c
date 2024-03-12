@@ -1,6 +1,4 @@
 #include "search_algos.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
 *linear_search - function find the  index of query value
 *@array: array of int
@@ -12,7 +10,7 @@ int linear_search(int *array, size_t size, int value)
 {
 	size_t i;
 
-	if (*array == '\0')
+	if (array == NULL)
 		return (-1);
 
 	for (i = 0; i < size; i++)
