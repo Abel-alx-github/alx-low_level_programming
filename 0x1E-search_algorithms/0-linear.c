@@ -2,12 +2,17 @@
 #include <stdio.h>
 
 /**
-*linear_search - function find the  index of query value
-*@array: array of int
-*@size: size of arry
-*@value: int to search for
-*Return: indx at which the value is found or -1
-*Description : search the value in array and return its indx or -1
+* linear_search - function find the  index of query value
+*
+* @array: array of int
+*
+* @size: size of arry
+*
+* @value: int to search for
+*
+* Return: indx at which the value is found or -1
+*
+* Description : search the value in array and return its indx or -1
 */
 
 
