@@ -1,0 +1,22 @@
+#builds a program using make
+
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+RM = rm -f
+NAME = school
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+	chmod +x $(NAME)
+
+clean: 
+	$(RM) *~ $(NAME)
+
+oclean: 
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all

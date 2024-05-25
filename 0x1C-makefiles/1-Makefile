@@ -1,0 +1,10 @@
+# build name of the executable: school
+
+CC = gcc
+SRC = main.c school.c
+
+all: school
+
+school: $(SRC)
+	$(CC) $(SRC) -o school
+	chmod +x school
